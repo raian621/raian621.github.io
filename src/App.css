@@ -26,5 +26,25 @@ nav {
 .contact {
   max-width: 500px;
   margin: auto;
+}
 
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  margin: 50px auto;
+}
+.landing hr {
+  width: 80%;
+}
+.landing-links {
+  display: flex;
+  padding: 1em;
+  margin: 0 auto;
+}
+.landing-name {
+  font-size: 10vh;
+  margin: 0;
 }
