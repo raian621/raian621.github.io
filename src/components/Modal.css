@@ -3,28 +3,49 @@
   flex-direction: column;
   position: fixed;
   z-index: 1;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); 
+  left: 10;
+  top: 10%;
   width: 80%;
-  height: 80%;
+  height: fit-content;
+  max-height: 80%;
   overflow: auto;
   background-color: #bbbbbb;
   border-radius: 1em;
+  box-shadow: 0 0 10px #000000;
+  transition: all 300ms;
 }
 .modal-inactive {
-  display: none;
+  display: flex;
+  visibility: hidden;
   flex-direction: column;
   position: fixed;
   z-index: 1;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); 
+  left: 10%;
+  top: 10%;
   width: 80%;
-  height: 80%;
+  height: fit-content;
+  max-height: 80%;
   overflow: auto;
-  background-color: #bbbb00;
+  background-color: #bbbbbb;
   border-radius: 1em;
+  box-shadow: 0 0 10px #000000;
+  transition: all 300ms;
+  transform: translateY(-100vh);
+}
+.modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+.modal-toggle {
+  border: none;
+  background-color: #00000000;
+}
+
+.modal-toggle svg {
+  width:7vmin;
+  height:7vmin;
 }
 
 .modal-overlay-active {
@@ -35,8 +56,18 @@
   height: 100vh;
   position: fixed;
   border: none;
-  background-color: #bbbb0011;
+  background-color: #12121255;
+  transition: all 300ms;
 }
 .modal-overlay-inactive {
-  display: none
+  visibility: hidden;
+  margin: 0 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  border: none;
+  background-color: #00000000;
+  transition: all 300ms;
 }

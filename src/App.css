@@ -1,26 +1,6 @@
 .App {
   text-align: center;
-}
-
-nav {
-  background-color: #444444;
-  height: 50px;
-  display: flex;
-}
-
-.navbar-item {
-  padding: 0.4em;
-  margin: auto 0;
-}
-.navbar-item:hover {
-  background-color: #777777;
-  font-size: calc(10px + 1.5vmin);
-}
-
-.navbar-link {
-  color: white;
-  text-decoration: none;
-  font-size: calc(10px + 1vmin);
+  font-family: 'Roboto', sans-serif;
 }
 
 .contact {
@@ -28,23 +8,64 @@ nav {
   margin: auto;
 }
 
+.landing-socials {
+  display: flex;
+  background-color: #4A4E69;
+  padding: 0.1rem 0.4rem;
+  margin: 2vh;
+  align-items: center;
+  border-radius: 0.4rem;
+}
+.landing-socials svg {
+  padding: 0.4rem 0.2rem 0.1rem 0.2rem;
+  transition: all 250ms;
+}
+.landing-socials svg:hover {
+  width: 2.5rem;
+  height: 2.5rem;
+}
 .landing {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
+  height: fit-content;
   width: 80%;
-  margin: 50px auto;
+  margin: 10vh auto;
+  /* outline: red dashed; */
 }
 .landing hr {
-  width: 80%;
+  width: 100%;
 }
 .landing-buttons {
   display: flex;
   padding: 1em;
   margin: 0 auto;
+  max-width: 100%;
+  overflow: scroll;
+  justify-content: center;
+}
+.landing-button {
+  text-decoration: none;
+  color: #F2E9E4;
+  border: none;
+  width: auto;
+  font-size: calc(10px + 0.5vmin);
+  background-color: #00000000;
+  transition: font-size 150ms cubic-bezier(1, 0.1, 0.1, 0.5)
+}
+.landing-button:hover {
+  font-size: calc(10px + 1vmin);
 }
 .landing-name {
-  font-size: 10vh;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: calc(30px + 5vmin);
   margin: 0;
+}
+.landing-description {
+  padding: 4vh;
+}
+.landing-text {
+  font-size: calc(10px + 1vmin);
+  text-align: left;
+  width: 100%;
 }

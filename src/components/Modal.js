@@ -1,16 +1,15 @@
 import './Modal.css';
 import { TiPlus } from "react-icons/ti"
-import { useState } from 'react';
 
-const Modal = ({ children, heading, active, toggleActive }) => {  
+const Modal = ({ children, heading, active, toggleActive, color }) => {  
   return (
     <>
       <div className={`modal-${active ? "active" : "inactive"}`}>
         <div className="modal-head">
           <h1 className="modal-heading">{heading}</h1>
-          <button onClick={toggleActive}>
+          <button className="modal-toggle" onClick={toggleActive}>
             {/* I could not find an X icon (:< */}
-            <TiPlus style={{transform: "rotate(45deg)"}}/>
+            <TiPlus style={{transform: "rotate(45deg)", color: {color}}}/>
           </button>
         </div>
         {children}
